@@ -1,0 +1,22 @@
+server:
+  port: 5556
+spring:
+  application:
+    name: 05-ms-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:5000/eureka/
+  instance:
+    prefer-ip-address: true
+
+turbine:
+  aggregator:
+    clusterConfig: default
+  #微服务名字
+  appConfig: 05-ms-consumer-hystix-feign
+  #appConfig: ms-consumer-hystix-feign-5200,ms-consumer-hystrix-command-5100
+  cluster-name-expression: "'default'"
+#  instanceUrlSuffix:
+#      ms-consumer-ribbon-user: 你的context-path/actuator/hystrix.strea
+
