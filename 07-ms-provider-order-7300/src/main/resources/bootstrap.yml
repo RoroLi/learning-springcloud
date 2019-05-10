@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms-provider-order
+  cloud:
+    config:
+      uri: http://127.0.0.1:7100
+      profile: prod
+      label: master

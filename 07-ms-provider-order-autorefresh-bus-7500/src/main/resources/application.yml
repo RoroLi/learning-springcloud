@@ -1,0 +1,25 @@
+spring:
+  rabbitmq:
+    host: 192.168.77.128
+    port: 5672
+    #virtual-host: tulingVip
+    username: guest
+    password: guest
+    connection-timeout: 10000
+    template:
+      mandatory: true
+  application:
+    name: ms-provider-order-7500
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ms-provider-order-autorefresh-bus-7500
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

@@ -1,0 +1,17 @@
+spring:
+    application:
+      name: ms-provider-order
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ms-provider-order-7300
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+

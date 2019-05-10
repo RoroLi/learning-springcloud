@@ -1,0 +1,6 @@
+spring:
+  application:
+    name:  MsConfigClient
+server:
+  #这个地方填了也没用，会被覆盖为git远程仓库的7200
+  port: 8080

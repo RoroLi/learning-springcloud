@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms-provider-order-7500
+  cloud:
+    config:
+      uri: http://localhost:7400
+      profile: prod
+      label: master

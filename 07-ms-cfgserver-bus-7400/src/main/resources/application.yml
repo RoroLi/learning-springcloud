@@ -1,0 +1,22 @@
+server:
+  port: 7400
+spring:
+  application:
+    name: ms-cfg-auto-refresh-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RoroLi/git-cloud-config.git
+          username: git-username
+          password: git-password
+  rabbitmq:
+    host: 192.168.77.128
+    port: 5672
+    #virtual-host: guest
+    username: guest
+    password: guest
+    connection-timeout: 10000
+    template:
+      mandatory: true
+
